@@ -1,0 +1,386 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 17px;
+    text-align: center;
+    height: 34px;
+    color: white;
+    background-color: #455D58;
+}
+
+nav {
+    font-family: 'Montserrat', sans-serif;
+    justify-content: space-between;
+    display: flex;
+}
+
+.left-nav {
+    flex-basis: 35%;
+}
+
+.right-nav {
+    flex-basis: 35%;
+}
+
+.left-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.left-nav ul li a {
+    color: #009A87;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.left-nav ul li a:hover {
+    color: #FFB342;
+    text-decoration: none;
+}
+
+.left-nav li {
+    padding-left: 50px;
+    padding-top: 35px;
+    padding-bottom: 29px;
+    text-align: center;
+}
+
+.right-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.right-nav li {
+    padding-right: 85px;
+    padding-top: 35px;
+    padding-bottom: 29px;
+}
+
+.right-nav li a:hover img {
+    filter: brightness(1.2) hue-rotate(45deg) sepia(100%) saturate(200%);
+    transition: all 0.3s ease-in-out;
+}
+
+.right-nav li img {
+    height: 23px;
+    transition: all 0.3s ease-in-out;
+}
+
+#logo {
+    text-decoration: none;
+    flex-basis: 30%;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Poppins';
+    color: #009A87;
+    transition: color 0.3s ease;
+}
+
+#logo:hover {
+    color: #FFB342;
+    text-decoration: none;
+    flex-basis: 30%;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Poppins';
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #009A87;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #009A87;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #009A87;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #009A87;
+}
+
+input[type="search"]::placeholder {
+    color: green;
+    font-size: 12px;
+    transform: translateX(10px) translateY(-3px);
+}
+
+.container {
+    width: 100%;
+    height: 550px;
+    background-color: #6FA196;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-kiri {
+    padding-left: 45px;
+    padding-top: 150px;
+}
+
+.pilih {
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.rasakan {
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.mock {
+    padding-right: 40px;
+    padding-top: 60px;
+    width: 520px;
+}
+
+.shop-now-button {
+    display: inline-block;
+    margin-top: 40px;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: #6FA196;
+    font-weight: 900;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: background-color 0.4s ease, color 0.4s ease, border-radius 0.4s ease;
+}
+
+.shop-now-button:hover {
+    background-color: #FFB342;
+    color: white;
+    border-radius: 50px;
+}
+
+.item-carousel {
+    flex: 0 0 auto;
+    margin-top: 3vh;
+}
+
+.item-carousel:last-child {
+    margin-right: 0;
+  }
+
+.img-carousel{
+    overflow: hidden;
+}
+
+#img-carousel {
+    height: 250px;
+}
+
+.name-carousel {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.price-carousel {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+#btn-carousel {
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
+}
+
+#btn-carousel:hover {
+    color: white;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.carousel-wrapper {
+    justify-content: space-evenly;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.section {
+    margin: 0px 20px 0px 20px;
+    border-radius: 40px;
+    padding: 13px;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.pemisah-section {
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.container-tentangkami {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.container-kursimeja {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tentang-kami {
+    border-radius: 30px;
+    width: 1320px;
+    margin-top: 3vh;
+    margin-right: 8vh;
+    margin-left: 8vh;
+}
+
+
+#kursimeja {
+    margin-top: 3vh;
+    width: 600px;
+    border-radius: 30px;
+}
+
+.container-tentangkami .button-inside {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 260%);
+}
+
+.button-inside a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    transition: padding 0.3s ease;
+}
+
+.button-inside a:hover {
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.container-kursi {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.container-kursi .button-inside {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 1500%);
+}
+
+.container-meja {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.container-meja .button-inside {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 1500%);
+}
+
+#pemisah {
+    display: flex;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 10px;
+    height: 2px;
+    background-color: black;
+}
+
+footer {
+    height: 20vh;
+    flex-shrink: 0;
+    background-image: linear-gradient(0deg, #6FA196, white);
+}
+
+.footer-medsos ul {
+    margin-right: 60px;
+    margin-bottom: 30px;
+    margin-top: 200px;
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.footer-medsos img {
+    margin-left: 30px;
+    height: 25px;
+}
+
+.footer-bawah {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bawah div {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.footer-bawah-kanan ul {
+    display: flex;
+    list-style: none;
+}
+
+.footer-bawah-kanan ul li {
+    margin-left: 50px;
+}
