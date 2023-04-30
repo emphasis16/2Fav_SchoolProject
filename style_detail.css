@@ -111,7 +111,7 @@ nav {
     color: #009A87;
 }
 
-.container-thumbnail-detail{
+.container-thumbnail-detail {
     display: flex;
     justify-content: space-between;
 }
@@ -122,10 +122,373 @@ nav {
     padding: 0;
     width: 50%;
     height: auto;
-  }
+}
 
-#kanan{
-    flex: 1; /* adjust flex value to take up the other half of the container */
+#kanan {
+    flex: 1;
+    /* adjust flex value to take up the other half of the container */
     background-color: #F8F8F9;
     height: auto;
+}
+
+.wrapper-kanan {
+    padding: 90px 60px 60px 60px;
+}
+
+#star-row {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#stars-container {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    margin-right: 20px;
+}
+
+#stars-container img {
+    width: auto;
+    height: 22px;
+}
+
+.btn-row {
+    border-collapse: collapse;
+    display: inline-flex;
+    border: 2px solid #FFB342;
+    margin-bottom: 20px;
+}
+
+#net {
+    font-weight: bold;
+    color: #FFB342;
+    background-color: white;
+    border: none;
+    padding: 10px 60px 10px 60px;
+}
+
+#beli {
+    font-weight: bold;
+    background-color: #FFB342;
+    color: white;
+    border: none;
+    padding: 10px 80px 10px 90px;
+}
+
+#namaproduk {
+    color: #00665E;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+#jenisbarang {
+    color: #00665E;
+    font-size: 20px;
+}
+
+#preview {
+    color: #00665E;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#review-quantity {
+    color: #00665E;
+    font-size: 20px;
+}
+
+#form-container {
+    background-color: white;
+    display: inline-flex;
+    border: 2px solid #6FA196;
+    margin-bottom: 20px;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+#metode-label {
+    background-color: #6FA196;
+    color: white;
+    padding: 10px 50px 13px 50px;
+    flex-basis: 50%;
+    margin: 0;
+}
+
+select {
+    font-size: 15px;
+    background-color: white;
+    color: #6FA196;
+    padding: 10px 65px 11px 60px;
+    border: none;
+    flex-basis: 50%;
+    margin: 0;
+}
+
+#harga {
+    margin-top: 10px;
+    font-size: 40px;
+    color: #6FA196;
+    margin-bottom: 10px;
+}
+
+#desc {
+    line-height: 1.75;
+    color: #6FA196;
+}
+
+#barang {
+    font-weight: bolder;
+}
+
+#review-title{
+    color: #00665E;
+    font-size: 20px;
+    margin: 30px 0px 30px 100px;
+}
+
+.rating-row{
+    display: flex;
+    justify-content: center;
+}
+
+#review-text{
+    font-weight: 900;
+    color: #6FA196;
+    margin-bottom: 15px;
+}
+
+#star-text{
+    font-weight: 900;
+    color: #6FA196; 
+}
+
+#bar5{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#bar4{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#bar3{
+    margin-left: 23px;
+    margin-right: 20px;
+}
+
+#bar2{
+    margin-left: 23px;
+    margin-right: 20px;
+}
+
+#bar1{
+    margin-left: 28px;
+    margin-right: 20px;
+}
+
+.rate-bar{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.rate-point{
+    display: flex;
+}
+
+#star-and-review{
+    padding-left: 20px;
+    padding-top: 8px;
+}
+
+#rate-number{
+    color: #6FA196;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+#reviews-yellow{
+    color: #FFB342;
+}
+
+.container{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.starrev-row{
+    display: flex;
+}
+
+.starrev-container{
+    margin-bottom: 15px;
+    border-radius: 0px;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #FFB342;
+    transition: border-radius 0.5s ease, background-color 0.5s ease;
+}
+
+.starrev-container:hover,
+.starrev-container.active {
+  background-color: #FFB342;
+  border-radius: 15px;
+}
+
+.starrev-container.active img{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+.starrev-container img{
+    transition: filter 0.4s ease;
+    margin-top: 16px;
+    margin-left: 17px;
+    filter: brightness(0) saturate(100%) invert(91%) sepia(10%) saturate(7500%) hue-rotate(324deg) brightness(101%) contrast(104%);
+}
+
+.section {
+    margin: 0px 20px 0px 20px;
+    border-radius: 40px;
+    padding: 13px;
+    display: inline-block;
+    color: #00665E;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.pemisah-section {
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#require{
+    font-weight: 900;
+    color: #00665E;
+    margin-bottom: 15px;
+}
+
+.row-prev{
+    display: flex;
+}
+
+.row-prev img{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    height: auto;
+}
+
+.item-carousel{
+    margin-top: 3vh;
+}
+
+#img-carousel{
+    width: 230.59px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.name-carousel{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.price-carousel{
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+#btn-carousel{
+    width: 80px;
+    padding-top: 15px;
+}
+
+.carousel-wrapper{
+    justify-content: space-around;
+    display: flex;
+}
+
+#btn-beli{
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
+}
+
+#btn-beli:hover{
+    color: white;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+footer {
+    height: 20vh;
+    flex-shrink: 0;
+    background-image: linear-gradient(0deg, #6FA196, white);
+}
+
+.footer-medsos ul {
+    margin-right: 60px;
+    margin-bottom: 30px;
+    margin-top: 200px;
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.footer-medsos img {
+    margin-left: 30px;
+    height: 25px;
+}
+
+.footer-bawah {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bawah div {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.footer-bawah-kanan ul {
+    display: flex;
+    list-style: none;
+}
+
+.footer-bawah-kanan ul li {
+    margin-left: 50px;
 }

@@ -30,6 +30,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Details</title>
+    <script src="detail.js"></script>
+    <script src="btn-beli.js"></script>
   </head>
   <body>
     <!-- Header -->
@@ -78,8 +80,285 @@
     </nav>
     <!-- Thumbnail and Detail -->
     <div class="container-thumbnail-detail">
-        <img src="assets_detail/thumbnail.png" alt="" class="thumbnail">
-        <div id="kanan"></div>
+      <img src="assets_detail/thumbnail.png" alt="" class="thumbnail" />
+      <div id="kanan">
+        <div class="wrapper-kanan">
+          <div id="namaproduk">La Redoute</div>
+          <div id="jenisbarang">ALMARI GANTUNG</div>
+          <div id="preview">pintu geser dan dua laci tarik bagian bawah</div>
+          <div id="star-row">
+            <div id="stars-container">
+              <img src="assets_detail/yellowstar.png" alt="" />
+              <img src="assets_detail/yellowstar.png" alt="" />
+              <img src="assets_detail/yellowstar.png" alt="" />
+              <img src="assets_detail/yellowstar.png" alt="" />
+              <img src="assets_detail/yellowstar.png" alt="" />
+            </div>
+            <div id="review-quantity">(672)</div>
+          </div>
+          <div id="form-container">
+            <form action="">
+              <label for="metode" id="metode-label">METODE PEMBAYARAN</label>
+              <select name="metode" id="metode">
+                <option value="volvo">BAYAR TUNAI</option>
+                <option value="saab">PAYLATER</option>
+                <option value="opel">KREDIT ONLINE</option>
+                <option value="audi">CRYPTO WALLET</option>
+              </select>
+            </form>
+          </div>
+          <div id="harga">Rp 1.800.000</div>
+          <div class="btn-row">
+            <button id="net" onclick="netAlert()">TAMBAH KE KERANJANG</button>
+            <button id="beli" onclick="beliAlert()">BELI SEKARANG</button>
+          </div>
+          <div id="desc">
+            <span id="barang">La Redoute</span>, merupakan salah satu almari
+            dari toko kami. Terdapat gantungan untuk pakaian. Terdapat dua sisi
+            pintu yang dapat digeser. Sangat cocok untuk ditempatkan pada
+            ruangan yang sempit. Ditembah dengan dua laci pada bagian bawah,
+            dapat untuk menyimpan barang-barang yang mini size.
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- Reviews -->
+    <div class="pemisah-section">
+      <hr style="flex: 1" />
+      <span class="section"> Reviews</span>
+      <hr style="flex: 1" />
+    </div>
+    <!-- Rating Row -->
+    <div class="rating-row">
+      <!-- snapshot -->
+      <div class="snapshot">
+        <div id="review-text">Rating Snapshot</div>
+        <div id="review-text">Select a row below to filter reviews.</div>
+        <!-- 5star -->
+        <div class="rate-bar">
+          <div id="star-text">5 stars</div>
+          <img src="assets_detail/5starbar.png" alt="" id="bar5" />
+          <div id="star-text">438</div>
+        </div>
+        <!-- 4star -->
+        <div class="rate-bar">
+          <div id="star-text">4 stars</div>
+          <img src="assets_detail/4starbar.png" alt="" id="bar4" />
+          <div id="star-text">142</div>
+        </div>
+        <!-- 3star -->
+        <div class="rate-bar">
+          <div id="star-text">3 stars</div>
+          <img src="assets_detail/3starbar.png" alt="" id="bar3" />
+          <div id="star-text">67</div>
+        </div>
+        <!-- 2star -->
+        <div class="rate-bar">
+          <div id="star-text">2 stars</div>
+          <img src="assets_detail/2starbar.png" alt="" id="bar2" />
+          <div id="star-text">21</div>
+        </div>
+        <!-- 1star -->
+        <div class="rate-bar">
+          <div id="star-text">1 stars</div>
+          <img src="assets_detail/1starbar.png" alt="" id="bar1" />
+          <div id="star-text">4</div>
+        </div>
+      </div>
+      <!-- overall -->
+      <div class="container">
+        <div id="review-text">Overall Rating</div>
+        <div class="rate-point">
+          <div id="rate-number">4.8</div>
+          <div id="star-and-review">
+            <div id="black-star-container">
+              <img src="assets_detail/blackstar.png" alt="" />
+              <img src="assets_detail/blackstar.png" alt="" />
+              <img src="assets_detail/blackstar.png" alt="" />
+              <img src="assets_detail/blackstar.png" alt="" />
+              <img src="assets_detail/blackstar.png" alt="" />
+            </div>
+            <div id="reviews-yellow">672 Reviews</div>
+          </div>
+        </div>
+        <div id="review-text">
+          0 out of 1 (0.00%) reviewers recommend this product
+        </div>
+      </div>
+      <!-- give rating -->
+      <div class="give-rating">
+        <div id="review-text">Review this Product</div>
+        <div class="starrev-row">
+          <div class="starrev-container">
+            <img src="assets_detail/starreview.png" alt="" />
+          </div>
+          <div class="starrev-container">
+            <img src="assets_detail/starreview.png" alt="" />
+          </div>
+          <div class="starrev-container">
+            <img src="assets_detail/starreview.png" alt="" />
+          </div>
+          <div class="starrev-container">
+            <img src="assets_detail/starreview.png" alt="" />
+          </div>
+          <div class="starrev-container">
+            <img src="assets_detail/starreview.png" alt="" />
+          </div>
+        </div>
+        <script>
+          const containers = document.querySelectorAll(".starrev-container");
+
+          containers.forEach((container, index) => {
+            container.addEventListener("mouseover", () => {
+              for (let i = 0; i <= index; i++) {
+                containers[i].classList.add("active");
+              }
+            });
+
+            container.addEventListener("mouseout", () => {
+              containers.forEach((container) => {
+                container.classList.remove("active");
+              });
+            });
+          });
+        </script>
+        <div id="require">
+          Adding a review will require a valid email <br> for verification
+        </div>
+      </div>
+    </div>
+    <!-- Pemisah Product Previews -->
+    <div class="pemisah-section">
+      <hr style="flex: 1" />
+      <span class="section"> Product Preview</span>
+      <hr style="flex: 1" />
+    </div>
+    <!-- Product Preview -->
+    <div class="row-prev">
+      <img src="assets_detail/prev1.png" alt="">
+      <img src="assets_detail/prev2.png" alt="">
+      <img src="assets_detail/prev3.png" alt="">
+      <img src="assets_detail/prev4.png" alt="">
+    </div>
+    <!-- Pemisah Mungkin Anda Suka -->
+    <div class="pemisah-section">
+      <hr style="flex: 1" />
+      <span class="section"> Mungkin Anda Menyukai </span>
+      <hr style="flex: 1" />
+    </div>
+    <!-- List -->
+    <!-- Baris 1 -->
+    <div class="carousel-wrapper">
+      <!-- item1 -->
+      <div class="item-carousel">
+        <div class="img-carousel">
+          <img src="/assets_all_products/meja1.png" alt="" id="img-carousel" />
+        </div>
+        <div class="name-carousel">Meja Makan Bulat</div>
+        <div class="price-carousel">Rp 3.000.000,00</div>
+        <div class="btn-carousel">
+          <img src="/assets_all_products/star.png" alt="" id="btn-carousel" />
+        </div>
+        <div class="btn-beli">
+          <button id="btn-beli" onclick="detail()">Beli Sekarang</button>
+        </div>
+      </div>
+      <!-- item 2 -->
+      <div class="item-carousel">
+        <div class="img-carousel">
+          <img src="/assets_all_products/meja4.png" alt="" id="img-carousel" />
+        </div>
+        <div class="name-carousel">Meja Koktail</div>
+        <div class="price-carousel">Rp 1.500.000,00</div>
+        <div class="btn-carousel">
+          <img src="/assets_all_products/star.png" alt="" id="btn-carousel" />
+        </div>
+        <div class="btn-beli">
+          <button id="btn-beli" onclick="detail()">Beli Sekarang</button>
+        </div>
+      </div>
+      <!-- item 3 -->
+      <div class="item-carousel">
+        <div class="img-carousel">
+          <img src="/assets_all_products/meja3.png" alt="" id="img-carousel" />
+        </div>
+        <div class="name-carousel">Meja Penyimpanan</div>
+        <div class="price-carousel">Rp 1.750.000,00</div>
+        <div class="btn-carousel">
+          <img src="/assets_all_products/star.png" alt="" id="btn-carousel" />
+        </div>
+        <div class="btn-beli">
+          <button id="btn-beli" onclick="detail()">Beli Sekarang</button>
+        </div>
+      </div>
+    </div>
+    <!-- Baris 2 -->
+    <div class="carousel-wrapper">
+      <!-- item 4 -->
+      <div class="item-carousel">
+        <div class="img-carousel">
+          <img src="/assets_all_products/lampu4.png" alt="" id="img-carousel" />
+        </div>
+        <div class="name-carousel">Lampu Corong</div>
+        <div class="price-carousel">Rp 600.000,00</div>
+        <div class="btn-carousel">
+          <img src="/assets_all_products/star.png" alt="" id="btn-carousel" />
+        </div>
+        <div class="btn-beli">
+          <button id="btn-beli" onclick="detail()">Beli Sekarang</button>
+        </div>
+      </div>
+      <!-- item5 -->
+      <div class="item-carousel">
+        <div class="img-carousel">
+          <img src="/assets_all_products/lampu5.png" alt="" id="img-carousel" />
+        </div>
+        <div class="name-carousel">Lampu Gantung Stick</div>
+        <div class="price-carousel">Rp 800.000,00</div>
+        <div class="btn-carousel">
+          <img src="/assets_all_products/star.png" alt="" id="btn-carousel" />
+        </div>
+        <div class="btn-beli">
+          <button id="btn-beli" onclick="detail()">Beli Sekarang</button>
+        </div>
+      </div>
+      <!-- item 6 -->
+      <div class="item-carousel">
+        <div class="img-carousel">
+          <img src="/assets_all_products/lampu6.png" alt="" id="img-carousel" />
+        </div>
+        <div class="name-carousel">Lampu Mangkok</div>
+        <div class="price-carousel">Rp 700.000,00</div>
+        <div class="btn-carousel">
+          <img src="/assets_all_products/star.png" alt="" id="btn-carousel" />
+        </div>
+        <div class="btn-beli">
+          <button id="btn-beli" onclick="detail()">Beli Sekarang</button>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-medsos">
+        <ul>
+          <li><img src="/assets/fb.png" alt="" /></li>
+          <li><img src="/assets/twt.png" alt="" /></li>
+          <li><img src="/assets/tt.png" alt="" /></li>
+          <li><img src="/assets/ig.png" alt="" /></li>
+        </ul>
+      </div>
+      <div id="pemisah"></div>
+      <div class="footer-bawah">
+        <div class="footer-bawah-kiri">2023 2Fav. All Rights Reserved.</div>
+        <div class="footer-bawah-kanan">
+          <ul>
+            <li>hello@satoru.sija</li>
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+            <li>Accesibility</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
