@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style_checkout.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keranjang Anda</title>
+    <script src="btn-beli.js"></script>
+    <script src="detail.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <p>Gratis Ongkir untuk Pembelian di atas Rp 600.000,00</p>
+    </header>
+    <!-- Navbar -->
+    <nav>
+      <div class="left-nav">
+        <ul>
+          <li><a href="allproducts.html">SHOP</a></li>
+          <li><a href="kontak.html">KONTAK KAMI</a></li>
+          <li><a href="tentangkami.html">TENTANG KAMI</a></li>
+        </ul>
+      </div>
+      <div class="logo"><a href="index.html" id="logo">2FAV</a></div>
+      <div class="right-nav">
+        <ul>
+          <li>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                border-bottom: 2px solid green;
+              "
+            >
+              <i class="fa fa-search"></i>
+              <label for="search"
+                ><img src="/assets/search.png" alt=""
+              /></label>
+              <input
+                type="search"
+                placeholder="SEARCH"
+                style="border: none; outline: none"
+              />
+            </div>
+          </li>
+          <li>
+            <a href=""><img src="/assets/profile.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="keranjang.html"><img src="/assets/keranjang.png" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Container -->
+    <div class="container">
+      <div class="wrapper-kiri">
+        <form action="">
+          <div id="title">Infomasi Pembelian dan Pengiriman</div>
+          <!-- email -->
+          <div class="inputan">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="" placeholder="Email" />
+          </div>
+          <div id="title">Alamat Pengiriman</div>
+          <!-- nama depan -->
+          <div class="inputan">
+            <label for="namadepan">Nama Depan</label>
+            <input
+              type="text"
+              name="namadepan"
+              id=""
+              placeholder="Nama Depan"
+            />
+          </div>
+          <!-- nama belakang -->
+          <div class="inputan">
+            <label for="namabelakang">Nama Belakang</label>
+            <input
+              type="text"
+              name="namabelakang"
+              id=""
+              placeholder="Nama Belakang"
+            />
+          </div>
+          <!-- alamat -->
+          <div class="inputan">
+            <label for="alamat">Alamat</label>
+            <input type="text" name="alamat" id="" placeholder="Alamat" />
+          </div>
+          <!-- kota -->
+          <div class="inputan">
+            <label for="kota">Kota</label>
+            <input type="text" name="kota" id="" placeholder="Kota" />
+          </div>
+          <!-- negara -->
+          <div class="inputan">
+            <label for="negara">Negara</label>
+            <input type="text" name="negara" id="" placeholder="Negara" />
+          </div>
+          <!-- telepon -->
+          <div class="inputan">
+            <label for="telepon">Telepon</label>
+            <input type="tel" name="telepon" id="" placeholder="Telepon" />
+          </div>
+        </form>
+        <!-- button checkout -->
+        <div class="button-wrapper">
+          <button type="button" id="purchase" onclick="purchase()">
+            Beli Sekarang
+          </button>
+        </div>
+      </div>
+      <div class="wrapper-kanan">
+        <div class="container-ringkasan">
+          <div id="title-ringkasan">Beli Sekarang</div>
+          <div id="liner"></div>
+          <div class="ringkasan-barang">
+            <div class="product">
+              <img src="assets_checkout/lemari.png" alt="" id="product-img">
+              <div id="name-product">La Redaute</div>
+              <div id="quantity"> × 1</div>
+            </div>
+            <div class="price">Rp. 1.800.000</div>
+          </div>
+          <div id="liner"></div>
+          <div id="data">
+            <div id="var">Subtotal</div>
+            <div id="val">Rp. 1.800.000</div>
+          </div>
+          <div id="data">
+            <div id="var">Pengiriman</div>
+            <div id="val">Rp. 200.000</div>
+          </div>
+          <div id="data">
+            <div id="var">Pajak</div>
+            <div id="val">Rp. 25.000</div>
+          </div>
+          <hr />
+          <div id="data">
+            <div id="var">Total</div>
+            <div id="val">Rp. 2.025.000</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-medsos">
+        <ul>
+          <li><img src="/assets/fb.png" alt="" /></li>
+          <li><img src="/assets/twt.png" alt="" /></li>
+          <li><img src="/assets/tt.png" alt="" /></li>
+          <li><img src="/assets/ig.png" alt="" /></li>
+        </ul>
+      </div>
+      <div id="pemisah"></div>
+      <div class="footer-bawah">
+        <div class="footer-bawah-kiri">2023 2Fav. All Rights Reserved.</div>
+        <div class="footer-bawah-kanan">
+          <ul>
+            <li>hello@satoru.sija</li>
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+            <li>Accesibility</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
