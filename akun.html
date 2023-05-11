@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/style_akun.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akun Anda</title>
+    <script src="/assets/js/btn-beli.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <!-- <header class="header">
+      <p>Gratis Ongkir untuk Pembelian di atas Rp 600.000,00</p>
+    </header> -->
+    <!-- Navbar -->
+    <nav>
+      <div class="left-nav">
+        <ul>
+          <li><a href="allproducts.html">SHOP</a></li>
+          <li><a href="kontak.html">KONTAK KAMI</a></li>
+          <li><a href="tentangkami.html">TENTANG KAMI</a></li>
+        </ul>
+      </div>
+      <div class="logo"><a href="index.html" id="logo">2FAV</a></div>
+      <div class="right-nav">
+        <ul>
+          <li>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                border-bottom: 2px solid green;
+              "
+            >
+              <i class="fa fa-search"></i>
+              <label for="search"
+                ><img src="/assets/assets_index/search.png" alt=""
+              /></label>
+              <input
+                type="search"
+                placeholder="SEARCH"
+                style="border: none; outline: none"
+              />
+            </div>
+          </li>
+          <li>
+            <a href=""><img src="/assets/assets_index/profile.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="keranjang.html"
+              ><img src="/assets/assets_index/keranjang.png" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Profile -->
+    <div class="profile-wrapper">
+        <img src="/assets/assets_akun/profile.jpeg" alt="" id="profile">
+    </div>
+    <div id="name"><b>Gojo Satoru</b></div>
+    <div id="usn"><b>@satoru_gojo</b></div>
+    <div id="greet">Hai, Gojo Satoru!!<br>Senang bertemu denganmu lagi.</div>
+    <div class="btn-wrapper">
+        <a href="">Edit Profil</a>
+        <a href="keranjang.html">Keranjang</a>
+    </div>
+    <!-- produk lain -->
+    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 160" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(111, 161, 150, 1)" offset="0%"></stop><stop stop-color="rgba(111, 161, 150, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,80L21.8,85.3C43.6,91,87,101,131,109.3C174.5,117,218,123,262,109.3C305.5,96,349,64,393,56C436.4,48,480,64,524,74.7C567.3,85,611,91,655,98.7C698.2,107,742,117,785,117.3C829.1,117,873,107,916,106.7C960,107,1004,117,1047,122.7C1090.9,128,1135,128,1178,109.3C1221.8,91,1265,53,1309,34.7C1352.7,16,1396,16,1440,24C1483.6,32,1527,48,1571,50.7C1614.5,53,1658,43,1702,42.7C1745.5,43,1789,53,1833,48C1876.4,43,1920,21,1964,24C2007.3,27,2051,53,2095,72C2138.2,91,2182,101,2225,90.7C2269.1,80,2313,48,2356,32C2400,16,2444,16,2487,29.3C2530.9,43,2575,69,2618,72C2661.8,75,2705,53,2749,53.3C2792.7,53,2836,75,2880,85.3C2923.6,96,2967,96,3011,80C3054.5,64,3098,32,3120,16L3141.8,0L3141.8,160L3120,160C3098.2,160,3055,160,3011,160C2967.3,160,2924,160,2880,160C2836.4,160,2793,160,2749,160C2705.5,160,2662,160,2618,160C2574.5,160,2531,160,2487,160C2443.6,160,2400,160,2356,160C2312.7,160,2269,160,2225,160C2181.8,160,2138,160,2095,160C2050.9,160,2007,160,1964,160C1920,160,1876,160,1833,160C1789.1,160,1745,160,1702,160C1658.2,160,1615,160,1571,160C1527.3,160,1484,160,1440,160C1396.4,160,1353,160,1309,160C1265.5,160,1222,160,1178,160C1134.5,160,1091,160,1047,160C1003.6,160,960,160,916,160C872.7,160,829,160,785,160C741.8,160,698,160,655,160C610.9,160,567,160,524,160C480,160,436,160,393,160C349.1,160,305,160,262,160C218.2,160,175,160,131,160C87.3,160,44,160,22,160L0,160Z"></path></svg>
+    <!-- Carousel -->
+    <div class="carousel-wrapper">
+        <div class="item-carousel">
+          <div class="img-carousel">
+            <img src="/assets/assets_index/dipan.png" alt="" id="img-carousel" />
+          </div>
+          <div class="name-carousel">Dipan Tidur</div>
+          <div class="price-carousel">Rp 2.000.000,00</div>
+          <div class="btn-carousel">
+            <button id="btn-carousel" onclick="detail()">Beli Sekarang</button>
+          </div>
+        </div>
+        <div class="item-carousel">
+          <div class="img-carousel">
+            <img src="/assets/assets_index/lampu.png" alt="" id="img-carousel" />
+          </div>
+          <div class="name-carousel">Lampu Gantung</div>
+          <div class="price-carousel">Rp 500.000,00</div>
+          <div class="btn-carousel">
+            <button id="btn-carousel" onclick="detail()">Beli Sekarang</button>
+          </div>
+        </div>
+        <div class="item-carousel">
+          <div class="img-carousel">
+            <img src="/assets/assets_index/lemari.png" alt="" id="img-carousel" />
+          </div>
+          <div class="name-carousel">Almari Baju</div>
+          <div class="price-carousel">Rp 1.750.000,00</div>
+          <div class="btn-carousel">
+            <button id="btn-carousel" onclick="detail()">Beli Sekarang</button>
+          </div>
+        </div>
+        <div class="item-carousel">
+          <div class="img-carousel">
+            <img src="/assets/assets_index/sofa.png" alt="" id="img-carousel" />
+          </div>
+          <div class="name-carousel">Sofa Mini</div>
+          <div class="price-carousel">Rp 1.200.000,00</div>
+          <div class="btn-carousel">
+            <button id="btn-carousel" onclick="detail()">Beli Sekarang</button>
+          </div>
+        </div>
+        <div class="item-carousel">
+          <div class="img-carousel">
+            <img src="/assets/assets_index/kursi.png" alt="" id="img-carousel" />
+          </div>
+          <div class="name-carousel">Kursi Duduk</div>
+          <div class="price-carousel">Rp 750.000,00</div>
+          <div class="btn-carousel">
+            <button id="btn-carousel" onclick="detail()">Beli Sekarang</button>
+          </div>
+        </div>
+      </div>
+      <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 160" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(111, 161, 150, 1)" offset="0%"></stop><stop stop-color="rgba(111, 161, 150, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,80L21.8,85.3C43.6,91,87,101,131,109.3C174.5,117,218,123,262,109.3C305.5,96,349,64,393,56C436.4,48,480,64,524,74.7C567.3,85,611,91,655,98.7C698.2,107,742,117,785,117.3C829.1,117,873,107,916,106.7C960,107,1004,117,1047,122.7C1090.9,128,1135,128,1178,109.3C1221.8,91,1265,53,1309,34.7C1352.7,16,1396,16,1440,24C1483.6,32,1527,48,1571,50.7C1614.5,53,1658,43,1702,42.7C1745.5,43,1789,53,1833,48C1876.4,43,1920,21,1964,24C2007.3,27,2051,53,2095,72C2138.2,91,2182,101,2225,90.7C2269.1,80,2313,48,2356,32C2400,16,2444,16,2487,29.3C2530.9,43,2575,69,2618,72C2661.8,75,2705,53,2749,53.3C2792.7,53,2836,75,2880,85.3C2923.6,96,2967,96,3011,80C3054.5,64,3098,32,3120,16L3141.8,0L3141.8,160L3120,160C3098.2,160,3055,160,3011,160C2967.3,160,2924,160,2880,160C2836.4,160,2793,160,2749,160C2705.5,160,2662,160,2618,160C2574.5,160,2531,160,2487,160C2443.6,160,2400,160,2356,160C2312.7,160,2269,160,2225,160C2181.8,160,2138,160,2095,160C2050.9,160,2007,160,1964,160C1920,160,1876,160,1833,160C1789.1,160,1745,160,1702,160C1658.2,160,1615,160,1571,160C1527.3,160,1484,160,1440,160C1396.4,160,1353,160,1309,160C1265.5,160,1222,160,1178,160C1134.5,160,1091,160,1047,160C1003.6,160,960,160,916,160C872.7,160,829,160,785,160C741.8,160,698,160,655,160C610.9,160,567,160,524,160C480,160,436,160,393,160C349.1,160,305,160,262,160C218.2,160,175,160,131,160C87.3,160,44,160,22,160L0,160Z"></path></svg>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-medsos">
+          <ul>
+            <li><img src="/assets/assets_index/fb.png" alt="" /></li>
+            <li><img src="/assets/assets_index/twt.png" alt="" /></li>
+            <li><img src="/assets/assets_index/tt.png" alt="" /></li>
+            <li><img src="/assets/assets_index/ig.png" alt="" /></li>
+          </ul>
+        </div>
+        <div id="pemisah"></div>
+        <div class="footer-bawah">
+          <div class="footer-bawah-kiri">2023 2Fav. All Rights Reserved.</div>
+          <div class="footer-bawah-kanan">
+            <ul>
+              <li>hello@satoru.sija</li>
+              <li>Terms of Service</li>
+              <li>Privacy Policy</li>
+              <li>Accesibility</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>

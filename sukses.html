@@ -25,21 +25,160 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style_sukses.css" />
+    <link rel="stylesheet" href="/assets/css/style_sukses.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Keranjang Anda</title>
-    <script src="btn-beli.js"></script>
-    <script src="detail.js"></script>
+    <script src="/assets/js/btn-beli.js"></script>
+    <script src="/assets/js/detail.js"></script>
   </head>
   <body>
     <div class="container">
-        <!-- <img src="assets_sukses/kiri.png" alt="" id="kiri">
-        <img src="assets_sukses/kanan.png" alt="" id="kanan"> -->
-        <div id="selamat">ANDA BERHASIL MEMBELI</div>
-        <div id="produk">La Redaute</div>
+      <div id="logo">2FAV</div>
+      <div id="produk">
+        <img src="/assets/assets_sukses/product.png" alt="" id="produk-img" />
+      </div>
+      <div id="thanks">TRANSAKSI BERHASIL</div>
+      <div id="thanks-sub">Terimakasih Telah Mempercayai Layanan Kami</div>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#6FA196" fill-opacity="1" d="M0,96L26.7,117.3C53.3,139,107,181,160,208C213.3,235,267,245,320,229.3C373.3,213,427,171,480,133.3C533.3,96,587,64,640,90.7C693.3,117,747,203,800,229.3C853.3,256,907,224,960,186.7C1013.3,149,1067,107,1120,112C1173.3,117,1227,171,1280,192C1333.3,213,1387,203,1413,197.3L1440,192L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path></svg>
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#6FA196" fill-opacity="1" d="M0,128L40,122.7C80,117,160,107,240,128C320,149,400,203,480,192C560,181,640,107,720,74.7C800,43,880,53,960,58.7C1040,64,1120,64,1200,69.3C1280,75,1360,85,1400,90.7L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg> -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#6FA196"
+        fill-opacity="1"
+        d="M0,128L40,138.7C80,149,160,171,240,186.7C320,203,400,213,480,224C560,235,640,245,720,234.7C800,224,880,192,960,170.7C1040,149,1120,139,1200,144C1280,149,1360,171,1400,181.3L1440,192L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+      ></path>
+    </svg>
+    <!-- Pemisah Produk -->
+    <div class="pemisah-section">
+      <hr style="flex: 1" />
+      <a href="#wrapper-detail" class="section">Detail Pembelian</a>
+      <hr style="flex: 1" />
+    </div>
+    <!-- Container Detail -->
+    <div id="wrapper-detail">
+      <form action="">
+        <!-- email -->
+        <div class="inputan">
+          <label for="email">Email</label>
+          <div id="input">farrelino.arvia@gmail.com</div>
+        </div>
+        <!-- nama depan -->
+        <div class="inputan">
+          <label for="namadepan">Nama Depan</label>
+          <div id="input">Farrelino Arvia</div>
+        </div>
+        <!-- nama belakang -->
+        <div class="inputan">
+          <label for="namabelakang">Nama Belakang</label>
+          <div id="input">Atmajaya</div>
+        </div>
+        <!-- alamat -->
+        <div class="inputan">
+          <label for="alamat">Alamat</label>
+          <div id="input">Jl. Karangkoja Utara No. 665</div>
+        </div>
+        <!-- kota -->
+        <div class="inputan">
+          <label for="kota">Kota</label>
+          <div id="input">Semarang</div>
+        </div>
+        <!-- negara -->
+        <div class="inputan">
+          <label for="negara">Negara</label>
+          <div id="input">Indonesia</div>
+
+        </div>
+        <!-- telepon -->
+        <div class="inputan">
+          <label for="telepon">Telepon</label>
+          <div id="input">08813718712</div>
+
+        </div>
+      </form>
+    </div>
+    <!-- Pemisah Produk -->
+    <div class="pemisah-section">
+      <hr style="flex: 1" />
+      <a href="allproducts.html" class="section">Lihat Produk Lainnya</a>
+      <hr style="flex: 1" />
+    </div>
+    <!-- Carousel -->
+    <div class="carousel-wrapper">
+      <div class="item-carousel">
+        <div class="img-carousel">
+          <img src="/assets/assets_index/dipan.png" alt="" id="img-carousel" />
+        </div>
+        <div class="name-carousel">Dipan Tidur</div>
+        <div class="price-carousel">Rp 2.000.000,00</div>
+        <div class="btn-carousel">
+          <button id="btn-carousel" onclick="detail()">Beli Sekarang</button>
+        </div>
+      </div>
+      <div class="item-carousel">
+        <div class="img-carousel">
+          <img src="/assets/assets_index/lampu.png" alt="" id="img-carousel" />
+        </div>
+        <div class="name-carousel">Lampu Gantung</div>
+        <div class="price-carousel">Rp 500.000,00</div>
+        <div class="btn-carousel">
+          <button id="btn-carousel" onclick="detail()">Beli Sekarang</button>
+        </div>
+      </div>
+      <div class="item-carousel">
+        <div class="img-carousel">
+          <img src="/assets/assets_index/lemari.png" alt="" id="img-carousel" />
+        </div>
+        <div class="name-carousel">Almari Baju</div>
+        <div class="price-carousel">Rp 1.750.000,00</div>
+        <div class="btn-carousel">
+          <button id="btn-carousel" onclick="detail()">Beli Sekarang</button>
+        </div>
+      </div>
+      <div class="item-carousel">
+        <div class="img-carousel">
+          <img src="/assets/assets_index/sofa.png" alt="" id="img-carousel" />
+        </div>
+        <div class="name-carousel">Sofa Mini</div>
+        <div class="price-carousel">Rp 1.200.000,00</div>
+        <div class="btn-carousel">
+          <button id="btn-carousel" onclick="detail()">Beli Sekarang</button>
+        </div>
+      </div>
+      <div class="item-carousel">
+        <div class="img-carousel">
+          <img src="/assets/assets_index/kursi.png" alt="" id="img-carousel" />
+        </div>
+        <div class="name-carousel">Kursi Duduk</div>
+        <div class="price-carousel">Rp 750.000,00</div>
+        <div class="btn-carousel">
+          <button id="btn-carousel" onclick="detail()">Beli Sekarang</button>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-medsos">
+        <ul>
+          <li><img src="/assets/assets_index/fb.png" alt="" /></li>
+          <li><img src="/assets/assets_index/twt.png" alt="" /></li>
+          <li><img src="/assets/assets_index/tt.png" alt="" /></li>
+          <li><img src="/assets/assets_index/ig.png" alt="" /></li>
+        </ul>
+      </div>
+      <div id="pemisah"></div>
+      <div class="footer-bawah">
+        <div class="footer-bawah-kiri">2023 2Fav. All Rights Reserved.</div>
+        <div class="footer-bawah-kanan">
+          <ul>
+            <li>hello@satoru.sija</li>
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+            <li>Accesibility</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

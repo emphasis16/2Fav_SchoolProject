@@ -118,8 +118,66 @@ input[type="search"]::placeholder {
     transform: translateX(10px) translateY(-3px);
 }
 
-.inputan input::placeholder{
+#title{
+    border-radius: 20px;
+    display: inline;
+    padding: 10px;
+    margin-left: 560px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    background-color: #00665E;
+}
+
+table{
+    margin-top: 70px;
+    margin-left: 50px;
+    border-collapse: collapse;
+}
+
+th{
+    border-bottom: 1px solid #000000;
     color: gray;
+    padding-bottom: 10px;
+}
+
+tr{
+    border-bottom: 1px solid #000000; 
+}
+
+#check-head{
+    width: 50px;
+}
+
+#product-head{
+    text-align: start;
+    width: 200px;
+}
+
+table img{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#price-head{
+    width: 200px;
+}
+
+#productname-head{
+    width: 200px;
+}
+
+#price-quantity-data{
+    text-align: center;
+}
+
+#quantity-head{
+    width: 200px;
+}
+
+#total-head{
+    width: 200px;
 }
 
 footer {
@@ -168,57 +226,15 @@ footer {
     justify-content: space-evenly;
 }
 
-.inputan{
-    margin: 0;
-    padding: 15px 30px 15px 30px;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid #D8D8D8;
-}
-
-.inputan label{
-    margin-right: 30px;
-    font-size: 15px;
-}
-
-.inputan input{
-    border: none;
-    width: 400px;
-}
-
-#title{
-    color: #009A87;
-    font-size: 18px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-#purchase{
-    justify-content: end;
-}
-
-.button-wrapper{
-    display: flex;
-    justify-content: end;
-}
-
-#purchase{
-    margin-top: 20px;
-    padding: 15px;
-    border-radius: 25px;
-    color: white;
-    background-color: #FFB342;
-    border: none;
-}
-
 .container-ringkasan{
-    margin-top: 50px;
-    height: 380px;
-    width: 600px;
+    margin-top: 100px;
+    height: 140px;
+    width: 350px;
     background-color: #CBEAF7;
     border: 2px solid #a1dffa;
     border-radius: 5px;
-    border-collapse: collapse;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 #data{
@@ -230,55 +246,25 @@ footer {
 }
 
 #title-ringkasan{
-    font-size: 18px;
-    margin-top: 15px;
+    font-size: larger;
+    margin-top: 20px;
     margin-left: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 hr{
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 10px;
     margin-bottom: 10px;
 }
 
-#liner{
-    display: flex;
-    background-color: #a1dffa;
-    height: 1px;
-    margin-bottom: 10px;
-}
-
-.ringkasan-barang{
-    display: flex;
-    justify-content: space-between;
-    margin: 15px;
-    margin-bottom: 50px;
-}
-
-.product{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-#product-img{
-    margin-right: 15px;
-    border-radius: 15px;
-}
-
-#name-product{
-    margin-right: 35px;
-}
-
-#quantity{
-    color: gray;
-}
-
-#val{
-    text-align: end;
-}
-
-#var{
-    margin-bottom: 5px;
+#checkout{
+    cursor: pointer;
+    margin-top: 50px;
+    width: 350px;
+    height: 40px;
+    background-color: #FFB342;
+    border: none;
+    border-radius: 30px;
+    color: white;
 }
